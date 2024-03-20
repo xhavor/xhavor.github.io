@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Registration Form</title>
+</head>
+<body>
+
+<h2>Customer Registration Form</h2>
+
+<form action="submit_registration.php" method="post">
+  
+  <fieldset>
+    <legend>Personal Information:</legend>
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+    
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" required><br>
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" required><br>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Shipping Address:</legend>
+    <label for="shipping_address">Street Address:</label><br>
+    <input type="text" id="shipping_address" name="shipping_address" required><br>
+    
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city" required><br>
+    
+    <label for="state">State/Province:</label><br>
+    <input type="text" id="state" name="state" required><br>
+    
+    <label for="zip">ZIP/Postal Code:</label><br>
+    <input type="text" id="zip" name="zip" required><br>
+    
+    <label for="country">Country:</label><br>
+    <input type="text" id="country" name="country" required><br>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Billing Address (if different from shipping):</legend>
+    <label for="billing_address">Street Address:</label><br>
+    <input type="text" id="billing_address" name="billing_address"><br>
+    
+    <label for="billing_city">City:</label><br>
+    <input type="text" id="billing_city" name="billing_city"><br>
+    
+    <label for="billing_state">State/Province:</label><br>
+    <input type="text" id="billing_state" name="billing_state"><br>
+    
+    <label for="billing_zip">ZIP/Postal Code:</label><br>
+    <input type="text" id="billing_zip" name="billing_zip"><br>
+    
+    <label for="billing_country">Country:</label><br>
+    <input type="text" id="billing_country" name="billing_country"><br>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Preferences:</legend>
+    <label for="promotional_emails">Receive promotional emails?</label><br>
+    <input type="checkbox" id="promotional_emails" name="promotional_emails" value="yes"><br>
+    
+    <label for="language">Preferred language:</label><br>
+    <select id="language" name="language">
+      <option value="english">English</option>
+      <option value="spanish">Spanish</option>
+      <option value="french">French</option>
+    </select><br>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Security:</legend>
+    <label for="security_question">Security Question:</label><br>
+    <input type="text" id="security_question" name="security_question" required><br>
+    
+    <label for="security_answer">Answer:</label><br>
+    <input type="text" id="security_answer" name="security_answer" required><br>
+  </fieldset>
+  
+  <fieldset>
+    <legend>Terms and Conditions:</legend>
+    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+    <label for="terms_conditions">I have read and agree to the Terms and Conditions.</label><br>
+  </fieldset>
+  
+  <input type="submit" value="Submit">
+  
+</form>
+
+</body>
+</html>
